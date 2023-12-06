@@ -25,7 +25,7 @@ export default function PanelRight() {
     <Flex mih={"100vh"} align={"center"} justify={"center"}>
       <Flex direction={"column"}>
         <Title order={1} c={"#B0B1B3"}>Sign up for <br /> exclusive access.</Title>
-        <form onSubmit={form.onSubmit(() => handleSubmit)}>
+        <form onSubmit={form.onSubmit(() => handleSubmit())}>
         <TextInput
         my={40}
         type='email'
