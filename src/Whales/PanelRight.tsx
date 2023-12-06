@@ -1,4 +1,3 @@
-import React from 'react'
 import { Button, Flex, TextInput, Title } from '@mantine/core'
 import { useForm } from '@mantine/form';
 import { useDisclosure } from '@mantine/hooks';

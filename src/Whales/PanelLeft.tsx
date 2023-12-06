@@ -1,4 +1,3 @@
-import React from 'react'
 import { Box, Image, Grid, Title, Text, Flex, Divider } from '@mantine/core';
 import NotificationCarousel from './NotificationCarousel';
 import Testimonial from './Testimonial';
