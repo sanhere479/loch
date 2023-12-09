@@ -101,6 +101,81 @@ export default function NotificationCarousel() {
             </Box>
           </Flex>
         </Paper>
+      </Carousel.Slide> <Carousel.Slide>
+        <Paper shadow="sm" p="md" radius="md" w={"200px"}>
+          <Flex direction={"column"} justify={"space-between"} mih="150px">
+            <Flex justify={"space-between"}>
+              <Image src={"/asset/Bell1.svg"} alt={"whales"} w={"32"} />
+              <Text fw={"700"} size="xs">
+                Save
+              </Text>
+            </Flex>
+            <Text fw={"500"} lh={"xs"} size="sm">
+              We’ll be sending notifications to you here
+            </Text>
+            <TextInput
+              placeholder="Enter your email"
+              value={"hello@gmail.com"}
+              readOnly
+              radius={"6px"}
+              styles={{
+                input: {
+                  fontWeight: 500,
+                  fontSize: "12px",
+                },
+              }}
+            />
+          </Flex>
+        </Paper>
+      </Carousel.Slide>
+      <Carousel.Slide>
+        <Paper shadow="sm" p="md" radius="md" w={"200px"}>
+          <Flex direction={"column"} justify={"space-between"} mih="150px">
+            <Flex justify={"space-between"}>
+              <Image src={"/asset/bar-chart.svg"} alt={"bar-chart"} w={"32"} />
+              <Checkbox label="" size="xs" defaultChecked />
+            </Flex>
+            <Box component="div">
+              <Text fw={"500"} lh={"xs"} size="xs">
+              Notify me when any wallets move more than
+              </Text>
+              <Select
+                mt={10}
+                data={[{ label: "$1000", value: "1000" }]}
+                w={"100px"}
+                size="xs"
+                variant="filled"
+                defaultValue={"1000"}
+                placeholder="Select an option"
+              />
+            </Box>
+          </Flex>
+        </Paper>
+      </Carousel.Slide>
+      <Carousel.Slide>
+        <Paper shadow="sm" p="md" radius="md" w={"200px"}>
+          <Flex direction={"column"} justify={"space-between"} mih="150px">
+            <Flex justify={"space-between"}>
+              <Image src={"/asset/clock.svg"} alt={"whales"} w={"32"} />
+              <Checkbox label="" size="xs" defaultChecked />
+            </Flex>
+            <Box component="div">
+              <Text fw={"500"} lh={"xs"} size="xs">
+                Notify me when any wallet dormant for
+              </Text>
+              <Select
+                mt={8}
+                data={[{ label: ">30 days", value: "30" }]}
+                w={"100px"}
+                size="xs"
+                variant="filled"
+                defaultValue={"30"}
+                placeholder="Select an option"
+              />
+              <Text mt={8} fw={"500"} lh={"xs"} size="xs">becomes active</Text>
+            </Box>
+          </Flex>
+        </Paper>
       </Carousel.Slide> 
     </Carousel>
   );

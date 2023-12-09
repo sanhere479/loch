@@ -21,7 +21,7 @@ export default function Testimonial() {
                     <Carousel.Slide key={index}>
                         <Paper shadow="sm" p="md" radius="md" w={"max-content"} maw={item.longText ? "500px" : "353px"}>
                             <Text fw={700}>{item.name} <Text span size="xs" c={"#96979A"} ml={10}>{item.title}</Text></Text>
-                            <Text fw={600} mt={20}>{item.text}</Text>
+                            <Text fw={500} mt={20}>{item.text}</Text>
                         </Paper>
                     </Carousel.Slide>
                 )

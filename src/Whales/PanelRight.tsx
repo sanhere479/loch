@@ -32,15 +32,15 @@ export default function PanelRight() {
         placeholder='Your email address'
         radius={"6px"}
         size='xl'
-        styles={{
-          input: {boxShadow: '0px 1px 1px 0px rgba(0, 0, 0, 0.04), 0px 4px 10px 0px rgba(0, 0, 0, 0.04)'}
+        classNames={{ 
+          input: "inputHover", 
         }}
         {...form.getInputProps('email')}
         />
         
-        <Button size='xl' type='submit' loading={loading} fullWidth color='#19191A' radius={"6px"}
-        style={{
-            fontSize: "16px",
+        <Button size='xl' type='submit' loading={loading} fullWidth color='#19191A' radius={"6px"} 
+        classNames={{ 
+          root: "buttonHover", 
         }}
         >Get Started</Button>
         </form>

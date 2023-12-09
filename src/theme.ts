@@ -14,6 +14,7 @@ export const theme = createTheme({
       h2: {
         fontSize: rem(30),
         fontWeight: "500", 
+        lineHeight: rem(37.5),
       },
     },
   },
